@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <meta charset="UTF-8">
+    <title>Fejl</title>
+</head>
+<body>
+<div class="box">
+    <h1>Ups! Noget gik galt!</h1>
+        <li th:each="fejlBesked : ${fejl}" th:text="${fejlBesked}"></li>
+    <a href="/register"><button>Prøv igen</button></a>
+</div>
+</body>
+</html>

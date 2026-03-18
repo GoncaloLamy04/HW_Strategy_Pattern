@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    text-align: center;
+    margin-top: 100px;
+}
+
+input, select, button {
+    display: block;
+    margin: 5px auto;
+    padding: 8px;
+    width: 250px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
