@@ -4,7 +4,7 @@
 En simpel Spring Boot applikation hvor brugere kan registrere sig.
 Input valideres med to forskellige strategier, og fejl håndteres centralt.
 
-Applikationen er lavet af Hello World.
+Applikationen er lavet af Hello World, gennem Code with me.
 Zealand Erhversakademi Næstved.
 DAT-2025, 2. Semester.
 
