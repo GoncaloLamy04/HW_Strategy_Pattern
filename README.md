@@ -4,6 +4,10 @@
 En simpel Spring Boot applikation hvor brugere kan registrere sig.
 Input valideres med to forskellige strategier, og fejl håndteres centralt.
 
+Applikationen er lavet af Hello World.
+Zealand Erhversakademi Næstved.
+DAT-2025, 2. Semester.
+
 ## Funktionalitet
 - Brugerregistrering med username, email og password
 - To valideringsstrategier der vælges via dropdown:
