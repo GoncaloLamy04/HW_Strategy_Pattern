@@ -1,13 +1,13 @@
-package dk.hw_stategy_pattern;
+package dk.hw_strategy_pattern;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HwStategyPatternApplication {
+public class HwStrategyPatternApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HwStategyPatternApplication.class, args);
+        SpringApplication.run(HwStrategyPatternApplication.class, args);
     }
 
 }

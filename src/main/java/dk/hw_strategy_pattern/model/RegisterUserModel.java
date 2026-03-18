@@ -1,4 +1,4 @@
-package dk.hw_stategy_pattern.model;
+package dk.hw_strategy_pattern.model;
 
 
 // Repræsenterer de data brugeren sender ind via registreringsformularen

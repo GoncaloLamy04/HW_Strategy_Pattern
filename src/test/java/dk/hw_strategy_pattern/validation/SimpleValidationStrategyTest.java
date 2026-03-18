@@ -1,7 +1,7 @@
-package dk.hw_stategy_pattern.validation;
+package dk.hw_strategy_pattern.validation;
 
-import dk.hw_stategy_pattern.exception.ValidationException;
-import dk.hw_stategy_pattern.model.RegisterUserModel;
+import dk.hw_strategy_pattern.exception.ValidationException;
+import dk.hw_strategy_pattern.model.RegisterUserModel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,10 +1,10 @@
-package dk.hw_stategy_pattern;
+package dk.hw_strategy_pattern;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HwStategyPatternApplicationTests {
+class HwStrategyPatternApplicationTests {
 
     @Test
     void contextLoads() {

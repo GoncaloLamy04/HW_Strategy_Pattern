@@ -1,7 +1,7 @@
-package dk.hw_stategy_pattern.controller;
+package dk.hw_strategy_pattern.controller;
 
-import dk.hw_stategy_pattern.model.RegisterUserModel;
-import dk.hw_stategy_pattern.service.UserService;
+import dk.hw_strategy_pattern.model.RegisterUserModel;
+import dk.hw_strategy_pattern.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

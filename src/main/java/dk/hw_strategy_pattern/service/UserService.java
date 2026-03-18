@@ -1,9 +1,9 @@
-package dk.hw_stategy_pattern.service;
+package dk.hw_strategy_pattern.service;
 
-import dk.hw_stategy_pattern.model.RegisterUserModel;
-import dk.hw_stategy_pattern.validation.SimpleValidationStrategy;
-import dk.hw_stategy_pattern.validation.StrictValidationStrategy;
-import dk.hw_stategy_pattern.validation.ValidationStrategy;
+import dk.hw_strategy_pattern.model.RegisterUserModel;
+import dk.hw_strategy_pattern.validation.SimpleValidationStrategy;
+import dk.hw_strategy_pattern.validation.StrictValidationStrategy;
+import dk.hw_strategy_pattern.validation.ValidationStrategy;
 import org.springframework.stereotype.Service;
 
 @Service

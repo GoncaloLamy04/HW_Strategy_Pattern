@@ -1,4 +1,4 @@
-package dk.hw_stategy_pattern.exception;
+package dk.hw_strategy_pattern.exception;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;

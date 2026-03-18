@@ -1,6 +1,4 @@
-package dk.hw_stategy_pattern.exception;
-
-import org.jspecify.annotations.Nullable;
+package dk.hw_strategy_pattern.exception;
 
 import java.util.List;
 
