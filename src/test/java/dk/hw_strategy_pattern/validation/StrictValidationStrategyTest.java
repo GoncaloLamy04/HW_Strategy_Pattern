@@ -19,7 +19,7 @@ public class StrictValidationStrategyTest {
     }
 
     @Test
-    void InputGiverIngenException(){
+    void inputGiverIngenException(){
         model.setUsername("yourmum");
         model.setPassword("IDontlikeSceneBuilder777");
         model.setEmail("goncalo@gmail.com");
@@ -45,7 +45,7 @@ public class StrictValidationStrategyTest {
         model.setEmail("goncalo@gmail.com");
 
         ValidationException ex = assertThrows(ValidationException.class, () -> strategy.validate(model));
-        assertEquals("Password skal indeholde tal og bogstaver!", ex.getMessage());
+        assertEquals("Password skal være mindst 10 tegn og indeholde både tal og bogstaver", ex.getMessage());
     }
 
     @Test
@@ -55,7 +55,7 @@ public class StrictValidationStrategyTest {
         model.setEmail("goncalo@gmail.com");
 
         ValidationException ex = assertThrows(ValidationException.class, () -> strategy.validate(model));
-        assertEquals("Password skal indeholde tal og bogstaver!", ex.getMessage());
+        assertEquals("Password skal være mindst 10 tegn og indeholde både tal og bogstaver", ex.getMessage());
 
     }
 

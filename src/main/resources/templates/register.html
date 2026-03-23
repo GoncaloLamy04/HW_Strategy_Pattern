@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="da" xmlns:th="http://www.thymeleaf.org">
 <head>
     <link rel="stylesheet" th:href="@{/style.css}">
     <meta charset="UTF-8">
@@ -7,19 +7,20 @@
 </head>
 <body>
 <div class="box">
-<h1>Registration Form</h1>
-<form th:action="@{/register}" th:object="${user}" method="post">
-    <label>Username: <input type="text" th:field="*{username}"></label><br>
-    <label>Email: <input type="email" th:field="*{email}"></label><br>
-    <label>Password: <input type="password" th:field="*{password}"></label><br>
-    <label>Valideringstype:
-        <select name="mode">
-            <option value="simple">Simple</option>
-            <option value="strict">Strict</option>
-        </select>
-    </label><br>
-    <button type="submit">Opret</button>
-</form>
+    <h1>Registreringsformular</h1>
+    <form th:action="@{/register}" th:object="${user}" method="post">
+        <label>Brugernavn: <input type="text" th:field="*{username}"></label><br>
+        <label>Email: <input type="email" th:field="*{email}"></label><br>
+        <label>Adgangskode: <input type="password" th:field="*{password}"></label><br>
+        <label>Valideringstype:
+            <select name="mode">
+                <option value="simple">Simpel</option>
+                <option value="strict">Streng</option>
+            </select>
+        </label><br>
+        <button type="submit">Opret</button>
+    </form>
 </div>
 </body>
 </html>
+

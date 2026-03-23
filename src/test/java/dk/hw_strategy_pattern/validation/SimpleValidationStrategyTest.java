@@ -34,7 +34,7 @@ class SimpleValidationStrategyTest {
         model.setPassword("secret123");
 
         ValidationException ex = assertThrows(ValidationException.class, () -> strategy.validate(model));
-        assertEquals("Username skal være mindst 3 tegn!", ex.getMessage());
+        assertEquals("Username skal være mindst 3 tegn", ex.getMessage());
     }
 
     @Test
@@ -54,7 +54,7 @@ class SimpleValidationStrategyTest {
         model.setPassword("abc");
 
         ValidationException ex = assertThrows(ValidationException.class, () -> strategy.validate(model));
-        assertEquals("Password skal mindst have 6 tegn!", ex.getMessage());
+        assertEquals("Password skal mindst have 6 tegn", ex.getMessage());
     }
 
     @Test
@@ -64,6 +64,6 @@ class SimpleValidationStrategyTest {
         model.setPassword("secret123");
 
         ValidationException ex = assertThrows(ValidationException.class, () -> strategy.validate(model));
-        assertEquals("Username skal være mindst 3 tegn!", ex.getMessage());
+        assertEquals("Username skal være mindst 3 tegn", ex.getMessage());
     }
 }

@@ -3,11 +3,11 @@ package dk.hw_strategy_pattern.controller;
 import dk.hw_strategy_pattern.model.RegisterUserModel;
 import dk.hw_strategy_pattern.service.UserService;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.ui.Model;
 
 @Controller
 public class UserController {
@@ -29,11 +29,8 @@ public class UserController {
     // Hvis validering fejler fanges det af GlobalExceptionHandler
     @PostMapping("/register")
     public String handleRegister(@ModelAttribute("user") RegisterUserModel user,
-                                 @RequestParam(defaultValue = "simple") String mode,
-                                 Model model) {
+                                 @RequestParam(defaultValue = "simple") String mode) {
         userService.registerUser(user, mode);
-        model.addAttribute("username", user.getUsername());
-        model.addAttribute("email", user.getEmail());
         return "success";
     }
 }

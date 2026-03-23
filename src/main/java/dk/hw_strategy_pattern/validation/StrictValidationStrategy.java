@@ -17,12 +17,12 @@ public class StrictValidationStrategy implements ValidationStrategy {
             fejl.add("Username skal være mindst 6 tegn og må ikke indeholde mellemrum");
         }
         if (model.getEmail() == null || !model.getEmail().matches(".+@.+\\..+")) {
-            fejl.add("Email skal indeholde @ og . !");
+            fejl.add("Email skal indeholde @ og .");
         }
         if (model.getPassword() == null || model.getPassword().length() < 10
                 || !model.getPassword().matches(".*[0-9].*")
                 || !model.getPassword().matches(".*[a-zA-Z].*")) {
-            fejl.add("Password skal indeholde tal og bogstaver!");
+            fejl.add("Password skal være mindst 10 tegn og indeholde både tal og bogstaver");
         }
 
         if (!fejl.isEmpty()){

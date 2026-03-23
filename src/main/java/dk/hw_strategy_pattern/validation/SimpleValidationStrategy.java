@@ -14,7 +14,7 @@ public class SimpleValidationStrategy implements ValidationStrategy{
         List<String> fejl = new ArrayList<>();
 
         if (model.getUsername() == null || model.getUsername().length() < 3) {
-            fejl.add("Username skal være mindst 3 tegn!");
+            fejl.add("Username skal være mindst 3 tegn");
         }
 
         if (model.getEmail() == null || !model.getEmail().contains("@") || !model.getEmail().contains(".")) {
@@ -22,7 +22,7 @@ public class SimpleValidationStrategy implements ValidationStrategy{
         }
 
         if (model.getPassword() == null || model.getPassword().length() < 6) {
-            fejl.add("Password skal mindst have 6 tegn!");
+            fejl.add("Password skal mindst have 6 tegn");
         }
 
         if (!fejl.isEmpty()){
